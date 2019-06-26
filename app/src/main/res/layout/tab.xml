@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--Tab Layout-->
+    <RelativeLayout
+        android:id="@+id/bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <!-- tab的分割线 -->
+        <ImageView
+            android:id="@+id/tabTop"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D8D8D8" />
+
+        <!-- tab的三个按钮 -->
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@color/pure_white">
+
+            <!-- 使用FrameLayout，最主要的原因是使用它可以很容易的再添加一个消息提醒的小图片 -->
+            <FrameLayout
+                android:id="@+id/lineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+                <!--<TextView-->
+                <!--android:id="@+id/lineTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/lineTextView"-->
+                <!--android:textColor="@color/theme_color"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--android:textSize="10sp" />-->
+                <ImageView
+                    android:id="@+id/lineImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_route2" />
+            </FrameLayout>
+
+            <!-- 付款按钮 -->
+            <FrameLayout
+                android:id="@+id/paymentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1">
+                <!--<TextView-->
+                <!--android:id="@+id/scannerTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--android:text="@string/scannerTextView"-->
+                <!--android:textColor="@color/theme_color"-->
+                <!--android:textSize="10sp" />-->
+                <ImageView
+                    android:id="@+id/paymentImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_payment" />
+            </FrameLayout>
+
+            <!-- 钱包按钮 -->
+            <FrameLayout
+                android:id="@+id/walletLayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1">
+                <!--<TextView-->
+                <!--android:id="@+id/walletTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/walletTextView"-->
+                <!--android:textColor="@color/theme_color"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--android:textSize="10sp" />-->
+                <ImageView
+                    android:id="@+id/walletImageView"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_wallet1" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

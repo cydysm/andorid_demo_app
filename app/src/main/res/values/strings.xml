@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="payment_refresh_btn">手动刷新二维码</string>
+    <string name="payment_textview">二维码车票</string>
+    <string name="wallet_quit">退出登录</string>
+    <string name="wallet_tel">修改手机号</string>
+    <string name="walletCard">实体卡</string>
+    <string name="wallet_recharge">充值</string>
+    <string name="wallet_consumption">消费历史</string>
+    <string name="wallet_balance">余额</string>
+    <string name="wallet_title_textview">钱包</string>
+    <string name="_1">1</string>
+</resources>
